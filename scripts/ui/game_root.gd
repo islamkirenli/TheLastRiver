@@ -39,7 +39,7 @@ var card_on_left: bool = true
 @onready var food_bar = $MainLayout/TopBarPadding/TopBars/FoodBar/FoodProgress
 @onready var population_bar = $MainLayout/TopBarPadding/TopBars/PopulationBar/PopulationProgress
 @onready var morale_bar = $MainLayout/TopBarPadding/TopBars/MoraleBar/MoraleProgress
-@onready var river_bar: Range = $MainLayout/TopBarPadding/TopBars/RiverBar/RiverCircle
+@onready var river_bar: Range = $MainLayout/TopBarPadding/TopBars/RiverBar/RiverProgress
 @onready var game_over_popup: Window = $GameOverPopup
 @onready var restart_button: Button = $GameOverPopup/MarginContainer/VBox/ButtonsRow/RestartButton
 @onready var main_menu_button: Button = $GameOverPopup/MarginContainer/VBox/ButtonsRow/MainMenuButton
@@ -74,6 +74,17 @@ func _ready() -> void:
 	else:
 		push_error("No events loaded from JSON.")
 
+	water_bar.min_value = 0
+	water_bar.max_value = 100
+	food_bar.min_value = 0
+	food_bar.max_value = 100
+	population_bar.min_value = 0
+	population_bar.max_value = 100
+	morale_bar.min_value = 0
+	morale_bar.max_value = 100
+	river_bar.min_value = 0
+	river_bar.max_value = 100
+	
 	update_bars()
 	
 	content_base_pos = content_area.position
@@ -201,7 +212,7 @@ func update_bars() -> void:
 	morale_bar.value = state["morale"]
 	river_bar.value = state["river"]
 	
-func animate_bar(bar: Range, from_value: float, to_value: float, duration: float = 0.4) -> void:
+func animate_bar(bar: TextureProgressBar, from_value: float, to_value: float, duration: float = 0.4) -> void:
 	bar.value = from_value
 	var tween := create_tween()
 	tween.tween_property(bar, "value", to_value, duration).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)

@@ -1,17 +1,23 @@
-[gd_scene load_steps=13 format=3 uid="uid://76x775cymcpw"]
+[gd_scene load_steps=19 format=3 uid="uid://76x775cymcpw"]
 
 [ext_resource type="Script" uid="uid://djyvyeqgxmfxr" path="res://scripts/ui/game_root.gd" id="1_dw3h0"]
 [ext_resource type="Theme" uid="uid://c0ap57ejpbr3v" path="res://global_theme.tres" id="1_pevc5"]
 [ext_resource type="Script" uid="uid://b2qfmo8dlyjmm" path="res://scripts/core/event_manager.gd" id="2_esgjc"]
 [ext_resource type="Texture2D" uid="uid://birfu60svwum8" path="res://assets/art/ui/water_icon.png" id="3_cylga"]
+[ext_resource type="Texture2D" uid="uid://cbce5rk6ti3v5" path="res://assets/art/ui/progress_bar_frame.png" id="3_i88f8"]
 [ext_resource type="Texture2D" uid="uid://buy2c4y4oa1ky" path="res://assets/art/ui/kırmızı.png" id="3_n6w2t"]
 [ext_resource type="Script" uid="uid://bb121j1rn1g1x" path="res://scripts/ui/pause_menu.gd" id="3_rx5uh"]
 [ext_resource type="Texture2D" uid="uid://ceckhyitbvfpo" path="res://assets/art/events/nehir_cocuk.png" id="4_bca70"]
-[ext_resource type="Script" uid="uid://bxvsh7pp6q22h" path="res://scripts/ui/CircularProgress.gd" id="4_k63du"]
+[ext_resource type="Texture2D" uid="uid://rji6fvn6c3s4" path="res://assets/art/ui/water_progress_bar.png" id="4_h5onw"]
 [ext_resource type="Texture2D" uid="uid://bgmqkq6p5gi2v" path="res://assets/art/ui/wheat_icon.png" id="4_ndy65"]
 [ext_resource type="Texture2D" uid="uid://cymgrrsvewe7f" path="res://assets/art/ui/choices_button.png" id="5_0krdv"]
 [ext_resource type="Texture2D" uid="uid://ihmx40j50cca" path="res://assets/art/ui/population_icon.png" id="6_c2lvh"]
+[ext_resource type="Texture2D" uid="uid://cc48bhye43nt7" path="res://assets/art/ui/food_progress_bar.png" id="6_h5onw"]
 [ext_resource type="Texture2D" uid="uid://bkfu20glmbslv" path="res://assets/art/ui/morale_smile_icon.png" id="7_c2lvh"]
+[ext_resource type="Texture2D" uid="uid://cba6nuyo5oh0k" path="res://assets/art/ui/river_progress_bar_frame.png" id="8_kdtot"]
+[ext_resource type="Texture2D" uid="uid://bjquh25r5cvgh" path="res://assets/art/ui/population_progress_bar.png" id="9_f3gwi"]
+[ext_resource type="Texture2D" uid="uid://dcv0x3niclw6m" path="res://assets/art/ui/river_progress_bar_inside.png" id="9_scx5b"]
+[ext_resource type="Texture2D" uid="uid://cey2ta3048fqe" path="res://assets/art/ui/morale_progress_bar.png" id="11_kdtot"]
 
 [node name="GameRoot" type="Control"]
 layout_mode = 3
@@ -61,9 +67,12 @@ layout_mode = 2
 text = "Water"
 horizontal_alignment = 1
 
-[node name="WaterProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/WaterBar"]
+[node name="WaterProgress" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/WaterBar"]
 layout_mode = 2
-value = 75.0
+value = 42.0
+texture_under = ExtResource("3_i88f8")
+texture_progress = ExtResource("4_h5onw")
+texture_progress_offset = Vector2(20.5, 7)
 
 [node name="WaterIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/WaterBar/WaterProgress"]
 layout_mode = 1
@@ -86,9 +95,12 @@ layout_mode = 2
 text = "Food"
 horizontal_alignment = 1
 
-[node name="FoodProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/FoodBar"]
+[node name="FoodProgress" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/FoodBar"]
 layout_mode = 2
-value = 50.0
+value = 100.0
+texture_under = ExtResource("3_i88f8")
+texture_progress = ExtResource("6_h5onw")
+texture_progress_offset = Vector2(20.5, 7)
 
 [node name="FoodIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/FoodBar/FoodProgress"]
 layout_mode = 1
@@ -111,15 +123,14 @@ layout_mode = 2
 text = "River"
 horizontal_alignment = 1
 
-[node name="RiverProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
-visible = false
+[node name="RiverProgress" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
 layout_mode = 2
-value = 30.0
-
-[node name="RiverCircle" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-script = ExtResource("4_k63du")
+size_flags_horizontal = 4
+value = 100.0
+fill_mode = 3
+texture_under = ExtResource("8_kdtot")
+texture_progress = ExtResource("9_scx5b")
+texture_progress_offset = Vector2(27.56, 27.74)
 
 [node name="PopulationBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
 layout_mode = 2
@@ -130,9 +141,12 @@ layout_mode = 2
 text = "Population"
 horizontal_alignment = 1
 
-[node name="PopulationProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/PopulationBar"]
+[node name="PopulationProgress" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/PopulationBar"]
 layout_mode = 2
 value = 85.0
+texture_under = ExtResource("3_i88f8")
+texture_progress = ExtResource("9_f3gwi")
+texture_progress_offset = Vector2(20.5, 7)
 
 [node name="PopulationIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/PopulationBar/PopulationProgress"]
 layout_mode = 1
@@ -155,9 +169,12 @@ layout_mode = 2
 text = "Morale"
 horizontal_alignment = 1
 
-[node name="MoraleProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/MoraleBar"]
+[node name="MoraleProgress" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/MoraleBar"]
 layout_mode = 2
 value = 100.0
+texture_under = ExtResource("3_i88f8")
+texture_progress = ExtResource("11_kdtot")
+texture_progress_offset = Vector2(20.5, 7)
 
 [node name="MoraleIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/MoraleBar/MoraleProgress"]
 layout_mode = 1

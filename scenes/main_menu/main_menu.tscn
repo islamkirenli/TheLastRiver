@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://n23ru4dboaoj"]
+[gd_scene load_steps=6 format=3 uid="uid://n23ru4dboaoj"]
 
 [ext_resource type="Script" uid="uid://bym1w5nrgncg8" path="res://scripts/ui/main_menu_ui.gd" id="1_fsom3"]
 [ext_resource type="Texture2D" uid="uid://b4vhbrak6dlf7" path="res://assets/art/ui/menu_button_ligth.png" id="2_0ebjn"]
 [ext_resource type="Theme" uid="uid://c0ap57ejpbr3v" path="res://global_theme.tres" id="2_uqeha"]
 [ext_resource type="Texture2D" uid="uid://c7x4qiud3uvbp" path="res://assets/art/ui/menu_button_dark.png" id="3_ob46e"]
+[ext_resource type="Texture2D" uid="uid://wuguqxnvul5" path="res://assets/art/backgrounds/main_menu_background.png" id="3_wem23"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,14 +16,14 @@ grow_vertical = 2
 theme = ExtResource("2_uqeha")
 script = ExtResource("1_fsom3")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.89411765, 0.7607843, 0.61960787, 1)
+texture = ExtResource("3_wem23")
 
 [node name="MenuContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
