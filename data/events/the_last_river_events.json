@@ -1,0 +1,1654 @@
+{
+  "events": [
+	{
+	  "id": "act1_e01",
+	  "act": 1,
+	  "title": "Mild Week",
+	  "text": "The river flows calmly this week. People feel safe, almost forgetting the old prophecy.",
+	  "choices": [
+		{
+		  "text": "Let them celebrate by the river.",
+		  "effects": {
+			"water": -1,
+			"food": 0,
+			"population": 0,
+			"morale": 3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Remind them to be careful and save water.",
+		  "effects": {
+			"water": 2,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e02",
+	  "act": 1,
+	  "title": "Harvest Festival",
+	  "text": "The yearly harvest festival is approaching. The council asks if it should be as grand as before.",
+	  "choices": [
+		{
+		  "text": "Hold a grand festival as always.",
+		  "effects": {
+			"water": 0,
+			"food": -2,
+			"population": 0,
+			"morale": 4,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Keep it small and modest this year.",
+		  "effects": {
+			"water": 0,
+			"food": 1,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Replace the festival with a river blessing ritual.",
+		  "effects": {
+			"water": 0,
+			"food": -1,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e03",
+	  "act": 1,
+	  "title": "Debris in the Current",
+	  "text": "Fishers report strange debris and darker mud carried by the current.",
+	  "choices": [
+		{
+		  "text": "Send the young scholar to investigate.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Blame upstream villages and ignore it.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e04",
+	  "act": 1,
+	  "title": "Children at the Shallows",
+	  "text": "Children play at the shallow edge of the river, laughing and splashing.",
+	  "choices": [
+		{
+		  "text": "Let them play. They need joy.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -1,
+			"morale": 3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Move them away and forbid play near the river.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Build a safer water pool away from the current.",
+		  "effects": {
+			"water": -1,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e05",
+	  "act": 1,
+	  "title": "Temple Whisper",
+	  "text": "The river priests say they feel a faint unease in the flow of the water.",
+	  "choices": [
+		{
+		  "text": "Allow a small thanksgiving ritual.",
+		  "effects": {
+			"water": -1,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Tell them not to worry the people.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e06",
+	  "act": 1,
+	  "title": "Old Well",
+	  "text": "An old, half-buried well to the north might still hold water if cleared.",
+	  "choices": [
+		{
+		  "text": "Send workers to reopen the old well.",
+		  "effects": {
+			"water": 3,
+			"food": -1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Ask the priests to read signs before touching it.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Leave it buried; focus on the river instead.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e07",
+	  "act": 1,
+	  "title": "Shortage Rumors",
+	  "text": "Rumors spread that grain stores are already lower than last year.",
+	  "choices": [
+		{
+		  "text": "Publicly deny the rumors.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Announce mild rationing of bread.",
+		  "effects": {
+			"water": 0,
+			"food": 2,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e08",
+	  "act": 1,
+	  "title": "Migrating Birds",
+	  "text": "Birds that usually follow the river leave earlier than expected.",
+	  "choices": [
+		{
+		  "text": "Order hunters to follow the birds and observe.",
+		  "effects": {
+			"water": 0,
+			"food": 1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Call it a superstition and do nothing.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Ask the scholar to record the timing carefully.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e09",
+	  "act": 1,
+	  "title": "First Hairline Cracks",
+	  "text": "Fine cracks appear in the dry patches of riverbank near the lower village.",
+	  "choices": [
+		{
+		  "text": "Send builders to reinforce the banks.",
+		  "effects": {
+			"water": 1,
+			"food": -1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Hold a small vigil at the cracks.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e10",
+	  "act": 1,
+	  "title": "The Old Prophecy",
+	  "text": "A wandering storyteller repeats the ancient words: 'One day, the river will stop.'",
+	  "choices": [
+		{
+		  "text": "Let people listen. They must remember.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Silence the storyteller to avoid panic.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Invite the storyteller to speak only in council.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e11",
+	  "act": 1,
+	  "title": "Numbers on Clay",
+	  "text": "The scholar asks for clay tablets and workers to record monthly water levels.",
+	  "choices": [
+		{
+		  "text": "Provide what is needed for careful records.",
+		  "effects": {
+			"water": 0,
+			"food": -1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Too early for such effort; refuse.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act1_e12",
+	  "act": 1,
+	  "title": "Uneasy Stillness",
+	  "text": "One morning, the river seems oddly quiet. No one else seems to notice.",
+	  "choices": [
+		{
+		  "text": "Ignore it; perhaps it is only in your mind.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Spend the morning walking alone by the river.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e01",
+	  "act": 2,
+	  "title": "Measured Decline",
+	  "text": "The scholar presents clay tablets: the water level has fallen each month without fail.",
+	  "choices": [
+		{
+		  "text": "Share the data openly with the people.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Keep the records within the council.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Blame the scholar for sowing fear.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": -1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e02",
+	  "act": 2,
+	  "title": "Cracking Fields",
+	  "text": "Farmers show you soil that splits under their feet.",
+	  "choices": [
+		{
+		  "text": "Divert more water to the fields.",
+		  "effects": {
+			"water": -3,
+			"food": 3,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Protect drinking water; sacrifice some crops.",
+		  "effects": {
+			"water": 2,
+			"food": -2,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Launch a soil study with the scholar.",
+		  "effects": {
+			"water": 0,
+			"food": -1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e03",
+	  "act": 2,
+	  "title": "Whispers at the Temple",
+	  "text": "Priests claim the river spirit is restless and demands a larger ritual.",
+	  "choices": [
+		{
+		  "text": "Approve a grand ritual with offerings.",
+		  "effects": {
+			"water": 0,
+			"food": -2,
+			"population": 0,
+			"morale": 3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Allow only a simple prayer.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Refuse; insist on practical measures only.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 1,
+			"spiritual": -1,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e04",
+	  "act": 2,
+	  "title": "Crowded Wells",
+	  "text": "Lines at the wells grow longer. Tempers flare in the heat.",
+	  "choices": [
+		{
+		  "text": "Send guards to impose strict order.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Ask volunteers to mediate disputes.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e05",
+	  "act": 2,
+	  "title": "First Exodus Talk",
+	  "text": "A small group quietly suggests leaving the valley to look for other rivers.",
+	  "choices": [
+		{
+		  "text": "Allow them to leave as a small scout group.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -1,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 2,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Forbid such talk; it weakens resolve.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Invite them to share what they see, if they return.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 2,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e06",
+	  "act": 2,
+	  "title": "Unequal Storage",
+	  "text": "It is discovered that wealthy homes have hidden water jars.",
+	  "choices": [
+		{
+		  "text": "Confiscate the extra water for public stores.",
+		  "effects": {
+			"water": 3,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Tax them lightly and let them keep most.",
+		  "effects": {
+			"water": 1,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Look away; stability is more important.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e07",
+	  "act": 2,
+	  "title": "Sickness by the Bank",
+	  "text": "People who bathed in a stagnant pool of the river fall ill.",
+	  "choices": [
+		{
+		  "text": "Ban bathing in the river entirely.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -1,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Open healing tents and treat them.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -1,
+			"morale": 2,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e08",
+	  "act": 2,
+	  "title": "Council Dispute",
+	  "text": "The scholar, the high priest, and the captain of the guard argue loudly in council.",
+	  "choices": [
+		{
+		  "text": "Support the scholar's call for careful planning.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 2,
+			"spiritual": -1,
+			"migration": 0,
+			"authority": -1
+		  }
+		},
+		{
+		  "text": "Support the priest's demand for more rituals.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": -1,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Support the captain's push for strict control.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Ask them all to compromise.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e09",
+	  "act": 2,
+	  "title": "Dry Tributary",
+	  "text": "A side stream that once fed the river is now only cracked earth.",
+	  "choices": [
+		{
+		  "text": "Send a small team to map the dry stream bed.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Hold a mourning walk along the empty path.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 1,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e10",
+	  "act": 2,
+	  "title": "Bread or Guards",
+	  "text": "Resources are limited: you can either boost food distribution or increase patrols.",
+	  "choices": [
+		{
+		  "text": "Prioritize bread for the hungry.",
+		  "effects": {
+			"water": 0,
+			"food": 3,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": -1
+		  }
+		},
+		{
+		  "text": "Prioritize more guards at wells and stores.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Attempt a balanced but complex plan.",
+		  "effects": {
+			"water": 0,
+			"food": 1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e11",
+	  "act": 2,
+	  "title": "Return of the Scouts",
+	  "text": "The small group you once allowed to leave returns, dusty and exhausted.",
+	  "choices": [
+		{
+		  "text": "Welcome them publicly and hear their report.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 2,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Question them in private first.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e12",
+	  "act": 2,
+	  "title": "Broken Wheel",
+	  "text": "A main water cart breaks while carrying jars uphill.",
+	  "choices": [
+		{
+		  "text": "Repair and reinforce all carts.",
+		  "effects": {
+			"water": -1,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Blame the workers for negligence.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e13",
+	  "act": 2,
+	  "title": "Nighttime Panic",
+	  "text": "At night, a rumor spreads: 'The river will vanish by dawn.' People rush to the banks.",
+	  "choices": [
+		{
+		  "text": "Calm the crowd with a speech.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Disperse them with guards.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Hold a quiet vigil with lanterns.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act2_e14",
+	  "act": 2,
+	  "title": "The First Dry Day",
+	  "text": "For one full day, no new water seems to flow from upstream. Only what remains in pools and wells.",
+	  "choices": [
+		{
+		  "text": "Treat it as a warning and begin strict rationing.",
+		  "effects": {
+			"water": 3,
+			"food": 0,
+			"population": 0,
+			"morale": -3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		},
+		{
+		  "text": "Assume it is temporary and reassure everyone.",
+		  "effects": {
+			"water": -1,
+			"food": 0,
+			"population": 0,
+			"morale": 3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e01",
+	  "act": 3,
+	  "title": "Empty Stones",
+	  "text": "Large stones that were once underwater now stand exposed in the center of the riverbed.",
+	  "choices": [
+		{
+		  "text": "Mark this as the 'First Turning' in the records.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Hold a silent walk among the stones.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e02",
+	  "act": 3,
+	  "title": "Fading Hope",
+	  "text": "Some families quietly pack their belongings at night.",
+	  "choices": [
+		{
+		  "text": "Permit those who wish to leave, but record their names.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -2,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 2,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Order everyone to stay; no more departures.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 3
+		  }
+		},
+		{
+		  "text": "Ask them to wait until a council decision is made.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e03",
+	  "act": 3,
+	  "title": "Last Ritual Request",
+	  "text": "The high priest speaks: 'If we are to save anything, one last great ritual must be held.'",
+	  "choices": [
+		{
+		  "text": "Agree and devote food and water to the ritual.",
+		  "effects": {
+			"water": -2,
+			"food": -2,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 3,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Refuse; these resources must go to survival.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 1,
+			"spiritual": -2,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e04",
+	  "act": 3,
+	  "title": "Deep Cracks",
+	  "text": "Deep fissures split the old riverbed. Some say they hear a hollow echo from below.",
+	  "choices": [
+		{
+		  "text": "Send ropes and a team to explore.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 2,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Declare the fissures sacred and untouchable.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 2,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Fill the most dangerous cracks near the village.",
+		  "effects": {
+			"water": 0,
+			"food": -1,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e05",
+	  "act": 3,
+	  "title": "Dried Mouths",
+	  "text": "Children line up at the well with cracked lips and hollow eyes.",
+	  "choices": [
+		{
+		  "text": "Give them extra rations from reserves.",
+		  "effects": {
+			"water": -2,
+			"food": -1,
+			"population": 0,
+			"morale": 3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Hold to the strict ration rules.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e06",
+	  "act": 3,
+	  "title": "Council at the Edge",
+	  "text": "The scholar, the priest, and the captain stand with you at the dry river's edge, awaiting your direction.",
+	  "choices": [
+		{
+		  "text": "Choose the scholar's plan: wells, cisterns, and careful engineering.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 3,
+			"spiritual": -1,
+			"migration": -1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Choose the priest's path: accept the prophecy, perform the final rites.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": -1,
+			"spiritual": 3,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Choose the captain's rule: strict survival for the strongest.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 3
+		  }
+		},
+		{
+		  "text": "Choose to prepare for a great migration.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 3,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e07",
+	  "act": 3,
+	  "title": "Dust Storm",
+	  "text": "A wind of dust sweeps through the the valley, turning the sky red-brown.",
+	  "choices": [
+		{
+		  "text": "Tell everyone to shelter inside and seal their homes.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": -1,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 1
+		  }
+		},
+		{
+		  "text": "Open communal shelters in stronger buildings.",
+		  "effects": {
+			"water": 0,
+			"food": -1,
+			"population": 0,
+			"morale": 2,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e08",
+	  "act": 3,
+	  "title": "Echo of Water",
+	  "text": "In the night, some swear they heard, just once, the sound of flowing water.",
+	  "choices": [
+		{
+		  "text": "Search the valley for hidden springs.",
+		  "effects": {
+			"water": 1,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Call it a dream and tell people to rest.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e09",
+	  "act": 3,
+	  "title": "The Last Pool",
+	  "text": "Only one broad, muddy pool remains where the river once sang.",
+	  "choices": [
+		{
+		  "text": "Protect it with guards; only the chosen may drink.",
+		  "effects": {
+			"water": 1,
+			"food": 0,
+			"population": 0,
+			"morale": -3,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 3
+		  }
+		},
+		{
+		  "text": "Let all drink freely one last time.",
+		  "effects": {
+			"water": -3,
+			"food": 0,
+			"population": 0,
+			"morale": 4,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Use it to fill cisterns and containers.",
+		  "effects": {
+			"water": 2,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "act3_e10",
+	  "act": 3,
+	  "title": "The Silent Day",
+	  "text": "The day arrives when no trickle, no ripple, no sound of water reaches the valley.",
+	  "choices": [
+		{
+		  "text": "Gather everyone to speak of what comes next.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 1,
+			"river": 0,
+			"tech": 1,
+			"spiritual": 1,
+			"migration": 1,
+			"authority": 0
+		  }
+		},
+		{
+		  "text": "Retreat to council chambers and plan in secret.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": -1,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 2
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "final_tragic",
+	  "act": 3,
+	  "title": "Finale: The Last River",
+	  "text": "The riverbed is dust and stone. No migration prepared, no new source found. The people linger, then fade.",
+	  "choices": [
+		{
+		  "text": "Accept that this valley has reached its end.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "final_migration",
+	  "act": 3,
+	  "title": "Finale: Caravan of Dust",
+	  "text": "Carts are loaded, children carried, the old helped onto wagons. The people leave the dead river behind in search of a new flow.",
+	  "choices": [
+		{
+		  "text": "Lead the people away from the valley.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 0,
+			"migration": 5,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "final_spiritual",
+	  "act": 3,
+	  "title": "Finale: Rite of the Dry River",
+	  "text": "Torches circle the empty bed as prayers rise. Whether water returns or not, the people find meaning in the end.",
+	  "choices": [
+		{
+		  "text": "Stand with them as the last rite is spoken.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 0,
+			"spiritual": 5,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	},
+	{
+	  "id": "final_technical",
+	  "act": 3,
+	  "title": "Finale: Wells of Memory",
+	  "text": "Cisterns, wells, and carved channels now bind what little water can be found. The river is gone, but the settlement endures.",
+	  "choices": [
+		{
+		  "text": "Oversee the first day without the river.",
+		  "effects": {
+			"water": 0,
+			"food": 0,
+			"population": 0,
+			"morale": 0,
+			"river": 0,
+			"tech": 5,
+			"spiritual": 0,
+			"migration": 0,
+			"authority": 0
+		  }
+		}
+	  ]
+	}
+  ]
+}

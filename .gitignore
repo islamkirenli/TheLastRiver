@@ -1,0 +1,11 @@
+# Godot 4 .gitignore
+
+# Godot-specific
+.import/
+.godot/
+
+# Imported assets
+*.import
+
+# Exported builds
+export/

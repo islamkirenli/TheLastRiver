@@ -1,0 +1,515 @@
+[gd_scene load_steps=13 format=3 uid="uid://76x775cymcpw"]
+
+[ext_resource type="Script" uid="uid://djyvyeqgxmfxr" path="res://scripts/ui/game_root.gd" id="1_dw3h0"]
+[ext_resource type="Theme" uid="uid://c0ap57ejpbr3v" path="res://global_theme.tres" id="1_pevc5"]
+[ext_resource type="Script" uid="uid://b2qfmo8dlyjmm" path="res://scripts/core/event_manager.gd" id="2_esgjc"]
+[ext_resource type="Texture2D" uid="uid://birfu60svwum8" path="res://assets/art/ui/water_icon.png" id="3_cylga"]
+[ext_resource type="Texture2D" uid="uid://buy2c4y4oa1ky" path="res://assets/art/ui/kırmızı.png" id="3_n6w2t"]
+[ext_resource type="Script" uid="uid://bb121j1rn1g1x" path="res://scripts/ui/pause_menu.gd" id="3_rx5uh"]
+[ext_resource type="Texture2D" uid="uid://ceckhyitbvfpo" path="res://assets/art/events/nehir_cocuk.png" id="4_bca70"]
+[ext_resource type="Script" uid="uid://bxvsh7pp6q22h" path="res://scripts/ui/CircularProgress.gd" id="4_k63du"]
+[ext_resource type="Texture2D" uid="uid://bgmqkq6p5gi2v" path="res://assets/art/ui/wheat_icon.png" id="4_ndy65"]
+[ext_resource type="Texture2D" uid="uid://cymgrrsvewe7f" path="res://assets/art/ui/choices_button.png" id="5_0krdv"]
+[ext_resource type="Texture2D" uid="uid://ihmx40j50cca" path="res://assets/art/ui/population_icon.png" id="6_c2lvh"]
+[ext_resource type="Texture2D" uid="uid://bkfu20glmbslv" path="res://assets/art/ui/morale_smile_icon.png" id="7_c2lvh"]
+
+[node name="GameRoot" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pevc5")
+script = ExtResource("1_dw3h0")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12156863, 0.14509805, 0.18039216, 1)
+
+[node name="MainLayout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="TopBarPadding" type="MarginContainer" parent="MainLayout"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TopBars" type="HBoxContainer" parent="MainLayout/TopBarPadding"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="WaterBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="WaterLabel" type="Label" parent="MainLayout/TopBarPadding/TopBars/WaterBar"]
+layout_mode = 2
+text = "Water"
+horizontal_alignment = 1
+
+[node name="WaterProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/WaterBar"]
+layout_mode = 2
+value = 75.0
+
+[node name="WaterIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/WaterBar/WaterProgress"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("3_cylga")
+expand_mode = 4
+
+[node name="FoodBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FoodLabel" type="Label" parent="MainLayout/TopBarPadding/TopBars/FoodBar"]
+layout_mode = 2
+text = "Food"
+horizontal_alignment = 1
+
+[node name="FoodProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/FoodBar"]
+layout_mode = 2
+value = 50.0
+
+[node name="FoodIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/FoodBar/FoodProgress"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("4_ndy65")
+expand_mode = 4
+
+[node name="RiverBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RiverLabel" type="Label" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
+layout_mode = 2
+text = "River"
+horizontal_alignment = 1
+
+[node name="RiverProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
+visible = false
+layout_mode = 2
+value = 30.0
+
+[node name="RiverCircle" type="TextureProgressBar" parent="MainLayout/TopBarPadding/TopBars/RiverBar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("4_k63du")
+
+[node name="PopulationBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PopulationLabel" type="Label" parent="MainLayout/TopBarPadding/TopBars/PopulationBar"]
+layout_mode = 2
+text = "Population"
+horizontal_alignment = 1
+
+[node name="PopulationProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/PopulationBar"]
+layout_mode = 2
+value = 85.0
+
+[node name="PopulationIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/PopulationBar/PopulationProgress"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("6_c2lvh")
+expand_mode = 4
+
+[node name="MoraleBar" type="VBoxContainer" parent="MainLayout/TopBarPadding/TopBars"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MoraleLabel" type="Label" parent="MainLayout/TopBarPadding/TopBars/MoraleBar"]
+layout_mode = 2
+text = "Morale"
+horizontal_alignment = 1
+
+[node name="MoraleProgress" type="ProgressBar" parent="MainLayout/TopBarPadding/TopBars/MoraleBar"]
+layout_mode = 2
+value = 100.0
+
+[node name="MoraleIcon" type="TextureRect" parent="MainLayout/TopBarPadding/TopBars/MoraleBar/MoraleProgress"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("7_c2lvh")
+expand_mode = 4
+
+[node name="ContentArea" type="HBoxContainer" parent="MainLayout"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CardArea" type="Control" parent="MainLayout/ContentArea"]
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="EventCard" type="Panel" parent="MainLayout/ContentArea/CardArea"]
+custom_minimum_size = Vector2(400, 500)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FrameTexture" type="TextureRect" parent="MainLayout/ContentArea/CardArea/EventCard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_n6w2t")
+
+[node name="CardPadding" type="MarginContainer" parent="MainLayout/ContentArea/CardArea/EventCard"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="CardContent" type="VBoxContainer" parent="MainLayout/ContentArea/CardArea/EventCard/CardPadding"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="EventTitleLabel" type="Label" parent="MainLayout/ContentArea/CardArea/EventCard/CardPadding/CardContent"]
+custom_minimum_size = Vector2(0, 43)
+layout_mode = 2
+text = "Sample Event Title"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="MainLayout/ContentArea/CardArea/EventCard/CardPadding/CardContent"]
+layout_mode = 2
+
+[node name="EventImage" type="TextureRect" parent="MainLayout/ContentArea/CardArea/EventCard/CardPadding/CardContent"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("4_bca70")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="EventTextLabel" type="Label" parent="MainLayout/ContentArea/CardArea/EventCard/CardPadding/CardContent"]
+custom_minimum_size = Vector2(0, 158)
+layout_mode = 2
+text = "This is where the event description text from JSON will appear...
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainLayout/ContentArea"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+
+[node name="ChoicesArea" type="VBoxContainer" parent="MainLayout/ContentArea/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="ChoiceButton1" type="TextureButton" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+texture_normal = ExtResource("5_0krdv")
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ChoiseLabel1" type="Label" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton1/MarginContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choise 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ChoiceButton2" type="TextureButton" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+texture_normal = ExtResource("5_0krdv")
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ChoiseLabel2" type="Label" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton2/MarginContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choice 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ChoiceButton3" type="TextureButton" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+texture_normal = ExtResource("5_0krdv")
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ChoiseLabel3" type="Label" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton3/MarginContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choice 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ChoiceButton4" type="TextureButton" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+texture_normal = ExtResource("5_0krdv")
+stretch_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ChoiseLabel4" type="Label" parent="MainLayout/ContentArea/MarginContainer/ChoicesArea/ChoiceButton4/MarginContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Choice 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="GameOverPopup" type="Window" parent="."]
+oversampling_override = 1.0
+title = "Game Over"
+initial_position = 1
+size = Vector2i(500, 260)
+visible = false
+unresizable = true
+borderless = true
+
+[node name="MarginContainer" type="MarginContainer" parent="GameOverPopup"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="GameOverPopup/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="GameOverLabel" type="Label" parent="GameOverPopup/MarginContainer/VBox"]
+layout_mode = 2
+text = "Denemeeeeeeeeeeeeeee"
+horizontal_alignment = 1
+
+[node name="ButtonsRow" type="HBoxContainer" parent="GameOverPopup/MarginContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="RestartButton" type="Button" parent="GameOverPopup/MarginContainer/VBox/ButtonsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Restart"
+
+[node name="MainMenuButton" type="Button" parent="GameOverPopup/MarginContainer/VBox/ButtonsRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Main Menu"
+
+[node name="EventManager" type="Node" parent="."]
+script = ExtResource("2_esgjc")
+
+[node name="ActBanner" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6862745)
+
+[node name="ActLabel" type="Label" parent="ActBanner"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "ACT I"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseMenu" type="ColorRect" parent="."]
+process_mode = 2
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+script = ExtResource("3_rx5uh")
+
+[node name="Panel" type="Panel" parent="PauseMenu"]
+custom_minimum_size = Vector2(400, 260)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PauseMenu/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="PauseMenu/Panel/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+text = "Paused"
+
+[node name="ButtonContinue" type="Button" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+text = "Continue"
+
+[node name="ButtonMainMenu" type="Button" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="HSeparator" type="HSeparator" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="SettingsLabel" type="Label" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+text = "Settings"
+
+[node name="VolumeRow" type="HBoxContainer" parent="PauseMenu/Panel/MarginContainer/VBox"]
+layout_mode = 2
+
+[node name="MasterVolume" type="Label" parent="PauseMenu/Panel/MarginContainer/VBox/VolumeRow"]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="MasterVolumeSlider" type="HSlider" parent="PauseMenu/Panel/MarginContainer/VBox/VolumeRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -30.0
+max_value = 0.0
